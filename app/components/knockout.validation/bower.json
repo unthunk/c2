@@ -1,0 +1,8 @@
+{
+  "name": "knockout.validation",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericmbarnard/Knockout-Validation"
+  }
+}

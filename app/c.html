@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10 lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Some Title</title>
+    <link rel="stylesheet" href="https://static.citrixonlinecdn.com/web-library-2/styles/col-common.css" media="screen">
+</head>
+<body id="someID" class="col">
+    <div class="container">
+        <!-- Header Template -->
+        <div class="header">
+            <div class="header-logo">
+                <a href="/some/link" id="logo">Citrix Online</a>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-links">
+                    <li>Citrix Online</li>
+                    <li><a href="/account/link">My Account</a></li>
+                    <li><a href="/support/link">24/7 Support</a></li>
+                    <li class="last-child"><a href="/logout/link">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Header Template -->
+        <div class="container-content">
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <div class="sidebar-content-shadow">
+                        <!-- Sidebar Template -->
+                        <ul class="sidebar-nav">
+                            <li class="current"><a href="/some/link">Home</a></li>
+                            <li><a href="/some/link">Link2</a></li>
+                            <li><a href="/some/link">Link3</a></li>
+                        </ul>
+                        <hr>
+                        <ul class="sidebar-nav">
+                            <li><a href="/some/link">Home</a></li>
+                            <li><a href="/some/link">Link2</a></li>
+                            <li><a href="/some/link">Link3</a></li>
+                        </ul>
+                        <hr>
+                        <div class="aside">
+                            <div class="aside-content">
+                                <h3>Aside Example</h3>
+                                <p>Aside description paragraph.</p>
+                            </div>
+                        </div>
+                        <!-- End Sidebar Template -->
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <!-- Main Content Template -->
+                <ul class="breadcrumb">
+                    <li><a href="/some/link">breadcrumb 1</a></li>
+                    <li><a href="/some/link">breadcrumb 2</a></li>
+                    <li>breadcrumb 3</li>
+                </ul>
+                <h1>Welcome, Laura!</h1>
+                <p>Content Area</p>
+
+               <div class="container">
+                    <div class="hero-unit">
+                        <h1>'Allo, 'Allo!</h1>
+                        <p>You now have</p>
+                        <ul>
+                            <li>HTML5 Boilerplate</li>
+                        </ul>
+                        <p>installed.</p>
+                        <h3>Enjoy coding! - Yeoman</h3>
+                    </div>
+
+
+                    <form data-bind="submit:addUser, style: {display:userListArray().length <= 7 ? 'block': 'none' }" >
+
+                        <div class="form-row">
+                            <label for="firstName">Name</label>
+                            <div class="form-row-column column-8">
+                                <input id="firstName" type="text" placeholder="First Name" data-bind='value:firstName, valueUpdate: "afterkeydown"'>
+                            </div>
+                            <div class="form-row-column column-8 push-2">
+                                <input id="lastName" type="text" placeholder="Last Name" data-bind='value:lastName, valueUpdate: "afterkeydown"'>
+                            </div>
+                        </div>
+
+                        <!-- Add item: <input type="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' /> -->
+
+                        <button type="submit" data-bind="enable: userListArray().length <= 10">Add</button>
+                    </form>
+                    <span data-bind="text: userListArray().length"></span>
+
+                    <p>Your values:</p>
+                    <div data-bind="foreach:userListArray">
+                         <span data-bind="text: name"> </span>
+                    </div>
+
+                    <div>
+                        <!--
+                        <button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+                        <button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+                    -->
+                    </div>
+
+                </div>
+
+
+                <!-- End Main Content Template -->
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <!-- Footer Template -->
+                    <ul class="nav-links">
+                        <li><a href="/some/link">Link 1</a></li>
+                        <li><a href="/some/link">Link 2</a></li>
+                        <li class="last-child">Language:</li>
+                    </ul>
+                    <ul class="language-links">
+                        <li>English</li>
+                        <li><a href="/some/link">Language 2</a></li>
+                        <li><a href="/some/link">Language 3</a></li>
+                    </ul>
+                </div>
+                <!-- End Footer Template -->
+                <div class="footer-logo">
+                    <a href="http://www.citrixonline.com" class="footerLogo" target="_blank">Citrix
+                        Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright Text</div>
+    </div>
+    <script src="https://static.citrixonlinecdn.com/web-library-2/scripts/web-library.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="bower_components/knockout/build/output/knockout-latest.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js(.tmp) scripts/coffee.js -->
+    <script src="scripts/hello.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
